@@ -1,8 +1,8 @@
-import IcoAlarm from '../assets/header/ico_alarm.svg?react';
-import IcoMenu from '../assets/header/ico_menu.svg?react';
-import logo from '../assets/header/logo.png';
-import profilePic from '../assets/header/profilePic.png';
-import headerStyles from './header.module.scss';
+import IcoAlarm from '@/assets/header/ico_alarm.svg?react';
+import IcoMenu from '@/assets/header/ico_menu.svg?react';
+import logo from '@/assets/header/logo.png';
+import profilePic from '@/assets/header/profilePic.png';
+import headerStyles from '@/Header/header.module.scss';
 
 const Header = () => {
   return (
