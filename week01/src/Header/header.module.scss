@@ -1,5 +1,4 @@
-$tablet-breakpoint: 367px;
-$pc-breakpoint: 1025px;
+@use '@/styles/variables.scss' as var;
 
 .container {
   display: flex;
@@ -8,17 +7,15 @@ $pc-breakpoint: 1025px;
 
   margin: 0 auto;
   padding: 18px 27px 0;
-  max-width: 321px;
   height: 74px;
 
-  @media (min-width: $tablet-breakpoint) {
+  @media (min-width: var.$tablet-breakpoint) {
     padding: 32px 27px 0;
-    max-width: 744px;
     height: 83px;
   }
 
-  @media (min-width: $pc-breakpoint) {
-    padding: 10px 0;
+  @media (min-width: var.$pc-breakpoint) {
+    padding: 10px 27px;
     max-width: 1640px;
   }
 
@@ -27,7 +24,7 @@ $pc-breakpoint: 1025px;
     align-items: center;
     gap: 8px;
 
-    @media (min-width: $tablet-breakpoint) {
+    @media (min-width: var.$tablet-breakpoint) {
       gap: 16px;
     }
 
@@ -36,7 +33,7 @@ $pc-breakpoint: 1025px;
       height: 48px;
       border-radius: 100%;
 
-      @media (min-width: $tablet-breakpoint) {
+      @media (min-width: var.$tablet-breakpoint) {
         width: 63px;
         height: 63px;
       }
@@ -55,7 +52,7 @@ $pc-breakpoint: 1025px;
         color: #6f4ff2;
         font-weight: 700;
 
-        @media (min-width: $tablet-breakpoint) {
+        @media (min-width: var.$tablet-breakpoint) {
           line-height: 42px;
           font-size: 28px;
         }
@@ -75,7 +72,7 @@ $pc-breakpoint: 1025px;
 
       background: #f1f1f2;
 
-      @media (min-width: $pc-breakpoint) {
+      @media (min-width: var.$pc-breakpoint) {
         display: none;
       }
     }
@@ -83,7 +80,7 @@ $pc-breakpoint: 1025px;
     .menuList {
       display: none;
 
-      @media (min-width: $pc-breakpoint) {
+      @media (min-width: var.$pc-breakpoint) {
         display: flex;
         gap: 12px;
 
