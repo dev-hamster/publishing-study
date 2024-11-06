@@ -1,0 +1,147 @@
+$tablet-breakpoint: 367px;
+$pc-breakpoint: 1025px;
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 0 auto;
+  padding: 18px 27px 0;
+  max-width: 321px;
+  height: 74px;
+
+  @media (min-width: $tablet-breakpoint) {
+    padding: 32px 27px 0;
+    max-width: 744px;
+    height: 83px;
+  }
+
+  @media (min-width: $pc-breakpoint) {
+    padding: 10px 0;
+    max-width: 1640px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    @media (min-width: $tablet-breakpoint) {
+      gap: 16px;
+    }
+
+    .icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 100%;
+
+      @media (min-width: $tablet-breakpoint) {
+        width: 63px;
+        height: 63px;
+      }
+
+      .iconImage {
+        width: 100%;
+      }
+    }
+
+    .titleWrapper {
+      padding: 10px;
+
+      .title {
+        line-height: 33.6px;
+        font-size: 21px;
+        color: #6f4ff2;
+        font-weight: 700;
+
+        @media (min-width: $tablet-breakpoint) {
+          line-height: 42px;
+          font-size: 28px;
+        }
+      }
+    }
+  }
+
+  .menu {
+    .menuIcon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 44px;
+      height: 44px;
+      border-radius: 8px;
+
+      background: #f1f1f2;
+
+      @media (min-width: $pc-breakpoint) {
+        display: none;
+      }
+    }
+
+    .menuList {
+      display: none;
+
+      @media (min-width: $pc-breakpoint) {
+        display: flex;
+        gap: 12px;
+
+        .menuItem {
+          padding: 10px;
+
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: #0c0c0c;
+        }
+
+        .alarmBox {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          width: 44px;
+          height: 44px;
+
+          background: #f1f1f2;
+
+          .noti {
+            position: absolute;
+            top: 9px;
+            right: 12px;
+
+            width: 8px;
+            height: 8px;
+            border-radius: 100%;
+
+            background-color: red;
+          }
+        }
+
+        .accountBox {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          gap: 10px;
+
+          width: 141px;
+          height: 44px;
+          border-radius: 50px;
+
+          color: #6f4ff2;
+          background: #f1f1f2;
+          text-align: center;
+
+          .profile {
+            width: 44px;
+            height: 44px;
+            border-radius: 100%;
+            border: 1px solid #29e072;
+          }
+        }
+      }
+    }
+  }
+}
