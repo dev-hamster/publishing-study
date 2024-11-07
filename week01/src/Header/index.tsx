@@ -1,5 +1,6 @@
 import IcoAlarm from '@/assets/header/ico_alarm.svg?react';
 import IcoMenu from '@/assets/header/ico_menu.svg?react';
+import IcoSearch from '@/assets/header/ico_search.svg?react';
 import logo from '@/assets/header/logo.png';
 import profilePic from '@/assets/header/profilePic.png';
 import headerStyles from '@/Header/header.module.scss';
@@ -15,7 +16,23 @@ const Header = () => {
           <div className={headerStyles.titleWrapper}>
             <h1 className={headerStyles.title}>NFT logoplace</h1>
           </div>
+
+          <div className={headerStyles.searchContainer}>
+            <form className={headerStyles.search} action=''>
+              <button className={headerStyles.searchButton}>
+                <IcoSearch />
+              </button>
+              <input
+                className={headerStyles.searchInput}
+                type='text'
+                name=''
+                id=''
+                placeholder='search'
+              />
+            </form>
+          </div>
         </div>
+
         <div className={headerStyles.menu}>
           <div className={headerStyles.menuIcon}>
             <IcoMenu />

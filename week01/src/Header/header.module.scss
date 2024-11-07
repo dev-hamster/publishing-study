@@ -10,12 +10,14 @@
   height: 74px;
 
   @media (min-width: var.$tablet-breakpoint) {
-    padding: 32px 27px 0;
+    padding: 32px 140px 0;
+
     height: 83px;
   }
 
   @media (min-width: var.$pc-breakpoint) {
-    padding: 10px 27px;
+    margin-top: 32px;
+    padding: 10px 140px;
     max-width: 1640px;
   }
 
@@ -139,6 +141,51 @@
           }
         }
       }
+    }
+  }
+}
+
+.searchContainer {
+  display: none;
+
+  @media (min-width: var.$pc-breakpoint) {
+    display: flex;
+  }
+  align-items: center;
+
+  width: 288px;
+  height: 44px;
+  padding: 10px;
+  border-radius: 8px;
+
+  background-color: #f1f1f2;
+
+  .search {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    width: 100%;
+  }
+
+  .searchButton {
+    border: none;
+    background: transparent;
+  }
+
+  .searchInput {
+    width: 100%;
+
+    border: none;
+    background: transparent;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #717171;
+
+    &:focus {
+      outline: none;
     }
   }
 }
