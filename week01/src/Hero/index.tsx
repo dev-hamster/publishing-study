@@ -19,6 +19,37 @@ const Hero = () => {
             facilisi ultrices sed faucibus proin cum ut. Eu dictum nisi
             facilisis non habitant senectus eget sollicitudin.
           </p>
+
+          <div className={heroStyles.activeUsersList}>
+            <div className={heroStyles.userList}>
+              <div className={heroStyles.userItem}>
+                <img
+                  src={profileImage1}
+                  alt=''
+                  className={heroStyles.userProfile}
+                />
+              </div>
+              <div className={heroStyles.userItem}>
+                <img
+                  src={profileImage2}
+                  alt=''
+                  className={heroStyles.userProfile}
+                />
+              </div>
+              <div className={heroStyles.userItem}>
+                <img
+                  src={profileImage3}
+                  alt=''
+                  className={heroStyles.userProfile}
+                />
+              </div>
+            </div>
+            <div className={heroStyles.activeUsersText}>
+              <p className={heroStyles.activeUsersCount}>12K</p>
+              <p className={heroStyles.activeUsersTitle}>Active users</p>
+            </div>
+          </div>
+
           <div className={heroStyles.buttonContainer}>
             <button className={`${heroStyles.button} ${heroStyles.filled}`}>
               <div className={heroStyles.buttonContent}>
@@ -28,8 +59,8 @@ const Hero = () => {
             </button>
             <button className={`${heroStyles.button} ${heroStyles.lined}`}>
               <div className={heroStyles.buttonContent}>
-                <IcoDiamond />
-                Create
+                <IcoDiamond className={heroStyles.diamond} />
+                Create your own
               </div>
             </button>
           </div>
@@ -41,36 +72,6 @@ const Hero = () => {
           </div>
           <p className={heroStyles.activeUsersCount}>12K</p>
           <p className={heroStyles.activeUsersTitle}>Active users</p>
-        </div>
-
-        <div className={heroStyles.activeUsersList}>
-          <div className={heroStyles.userList}>
-            <div className={heroStyles.userItem}>
-              <img
-                src={profileImage1}
-                alt=''
-                className={heroStyles.userProfile}
-              />
-            </div>
-            <div className={heroStyles.userItem}>
-              <img
-                src={profileImage2}
-                alt=''
-                className={heroStyles.userProfile}
-              />
-            </div>
-            <div className={heroStyles.userItem}>
-              <img
-                src={profileImage3}
-                alt=''
-                className={heroStyles.userProfile}
-              />
-            </div>
-          </div>
-          <div className={heroStyles.activeUsersText}>
-            <p className={heroStyles.activeUsersCount}>12K</p>
-            <p className={heroStyles.activeUsersTitle}>Active users</p>
-          </div>
         </div>
       </div>
     </section>

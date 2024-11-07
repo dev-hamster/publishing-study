@@ -1,6 +1,8 @@
 @use '@/styles/variables.scss' as var;
 
 .heroContainer {
+  display: flex;
+  align-items: center;
   position: relative;
   box-sizing: border-box;
 
@@ -30,12 +32,12 @@
   flex-direction: column;
   gap: 12px;
 
-  max-width: 170px;
+  width: 70%;
 
   @media (min-width: var.$tablet-breakpoint) {
     gap: 24px;
 
-    max-width: 100%;
+    width: 100%;
   }
 
   .title {
@@ -182,6 +184,10 @@
       border-radius: 100%;
       border: 1px solid #29e072;
 
+      img {
+        width: 100%;
+      }
+
       @media (min-width: var.$tablet-breakpoint) {
         width: 44px;
         height: 44px;
@@ -279,6 +285,19 @@
 }
 .lined {
   border: 1px solid #866afa;
-  background: #fff;
+  background: transparent;
   color: #866afa;
+
+  @media (min-width: var.$tablet-breakpoint) {
+    border: 1px solid #fff;
+    color: #fff;
+  }
+}
+
+.diamond {
+  @media (min-width: var.$tablet-breakpoint) {
+    path {
+      stroke: #fff !important;
+    }
+  }
 }
