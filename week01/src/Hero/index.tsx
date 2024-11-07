@@ -19,10 +19,24 @@ const Hero = () => {
             facilisi ultrices sed faucibus proin cum ut. Eu dictum nisi
             facilisis non habitant senectus eget sollicitudin.
           </p>
+          <div className={heroStyles.buttonContainer}>
+            <button className={`${heroStyles.button} ${heroStyles.filled}`}>
+              <div className={heroStyles.buttonContent}>
+                Discover now
+                <IcoArrow />
+              </div>
+            </button>
+            <button className={`${heroStyles.button} ${heroStyles.lined}`}>
+              <div className={heroStyles.buttonContent}>
+                <IcoDiamond />
+                Create
+              </div>
+            </button>
+          </div>
         </div>
 
         <div className={heroStyles.activeUsersBox}>
-          <div className='activeUsersImageWrapper'>
+          <div className={heroStyles.activeUsersImageWrapper}>
             <img src={activeUsersImage} alt='' className='activeUsersImage' />
           </div>
           <p className={heroStyles.activeUsersCount}>12K</p>
@@ -58,20 +72,6 @@ const Hero = () => {
             <p className={heroStyles.activeUsersTitle}>Active users</p>
           </div>
         </div>
-      </div>
-      <div className={heroStyles.buttonContainer}>
-        <button className={`${heroStyles.button} ${heroStyles.filled}`}>
-          <div className={heroStyles.buttonContent}>
-            <IcoArrow />
-            Discover now
-          </div>
-        </button>
-        <button className={`${heroStyles.button} ${heroStyles.lined}`}>
-          <div className={heroStyles.buttonContent}>
-            Create
-            <IcoDiamond />
-          </div>
-        </button>
       </div>
     </section>
   );
