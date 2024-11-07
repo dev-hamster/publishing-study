@@ -48,6 +48,14 @@
       font-weight: 800;
       line-height: 47.3px;
     }
+
+    @media (min-width: var.$pc-breakpoint) {
+      max-width: 857px;
+
+      font-size: 56px;
+      font-weight: 800;
+      line-height: 61.6px;
+    }
   }
   .content {
     font-weight: 400;
@@ -57,6 +65,12 @@
     @media (min-width: var.$tablet-breakpoint) {
       max-width: 533px;
 
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+
+    @media (min-width: var.$pc-breakpoint) {
       font-size: 16px;
       font-weight: 400;
       line-height: 24px;
@@ -90,6 +104,11 @@
 
     width: 161px;
     height: 161px;
+  }
+
+  @media (min-width: var.$pc-breakpoint) {
+    top: 59px;
+    right: 8.72%;
   }
 
   .activeUsersImageWrapper {
@@ -145,6 +164,12 @@
 
     width: 254px;
     height: 80px;
+  }
+
+  @media (min-width: var.$pc-breakpoint) {
+    top: 348px;
+    left: auto;
+    right: 14.2%;
   }
 
   .userList {

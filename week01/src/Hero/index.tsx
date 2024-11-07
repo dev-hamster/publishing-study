@@ -12,7 +12,7 @@ const Hero = () => {
       <div className={heroStyles.heroContainer}>
         <div className={heroStyles.textContainer}>
           <p className={heroStyles.title}>
-            Explore Unique Digital Art and Collectibles
+            Explore Unique Digital Art And Collectibles
           </p>
           <p className={heroStyles.content}>
             Lorem ipsum dolor sit amet consectetur. Iaculis vestibulum purus
