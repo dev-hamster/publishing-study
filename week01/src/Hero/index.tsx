@@ -5,6 +5,7 @@ import IcoDiamond from '@/assets/hero/ico_jewel.svg?react';
 import profileImage1 from '@/assets/hero/profile_pic1.png';
 import profileImage2 from '@/assets/hero/profile_pic2.png';
 import profileImage3 from '@/assets/hero/profile_pic3.png';
+import Button from '@/components/Button';
 
 const Hero = () => {
   return (
@@ -51,18 +52,18 @@ const Hero = () => {
           </div>
 
           <div className={heroStyles.buttonContainer}>
-            <button className={`${heroStyles.button} ${heroStyles.filled}`}>
+            <Button filled>
               <div className={heroStyles.buttonContent}>
                 Discover now
                 <IcoArrow />
               </div>
-            </button>
-            <button className={`${heroStyles.button} ${heroStyles.lined}`}>
+            </Button>
+            <Button lined>
               <div className={heroStyles.buttonContent}>
                 <IcoDiamond className={heroStyles.diamond} />
                 Create your own
               </div>
-            </button>
+            </Button>
           </div>
         </div>
 
