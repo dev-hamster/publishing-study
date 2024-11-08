@@ -1,3 +1,5 @@
+import { useEffect, useState } from 'react';
+
 import card01 from '@/assets/card01.jpeg';
 import card02 from '@/assets/card02.jpeg';
 import IcoClock from '@/assets/ico-clock.svg?react';
@@ -10,9 +12,33 @@ import cardStyles from '@/Card/card.module.scss';
 import Button from '@/components/Button';
 
 const Card = () => {
+  const [visibleCards, setVisibleCards] = useState<(typeof CARD_DATA)[0][]>([]);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const width = window.innerWidth;
+      let count;
+
+      if (width >= 1024) {
+        count = 5;
+      } else if (width >= 768) {
+        count = 3;
+      } else {
+        count = 2;
+      }
+
+      setVisibleCards(CARD_DATA.slice(0, count));
+    };
+
+    handleResize(); // 초기화 시 호출
+    window.addEventListener('resize', handleResize); // 리사이즈 이벤트 등록
+
+    return () => window.removeEventListener('resize', handleResize); // 이벤트 정리
+  }, []);
+
   return (
     <div className={cardStyles.cardContainer}>
-      {CARD_DATA.map(
+      {visibleCards.map(
         ({ time, title, isLiked, contentSrc, userList, currentBid }) => (
           <div className={cardStyles.card}>
             <div className={cardStyles.thumbnailBox}>
@@ -92,6 +118,34 @@ const CARD_DATA = [
       },
     ],
     currentBid: '1.35 ETH',
+  },
+  {
+    time: '2h:24m:04s',
+    title: 'Illuminated Enigma',
+    isLiked: true,
+    contentSrc: card02,
+    userList: [
+      { userId: 'EtherFlow', profileSrc: user03 },
+      {
+        userId: 'NanoNebula',
+        profileSrc: user01,
+      },
+    ],
+    currentBid: '2.05 ETH',
+  },
+  {
+    time: '2h:24m:04s',
+    title: 'Illuminated Enigma',
+    isLiked: true,
+    contentSrc: card02,
+    userList: [
+      { userId: 'EtherFlow', profileSrc: user03 },
+      {
+        userId: 'NanoNebula',
+        profileSrc: user01,
+      },
+    ],
+    currentBid: '2.05 ETH',
   },
   {
     time: '2h:24m:04s',
