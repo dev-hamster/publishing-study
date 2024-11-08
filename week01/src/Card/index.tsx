@@ -8,7 +8,6 @@ import user02 from '@/assets/user02.jpeg';
 import user03 from '@/assets/user03.jpeg';
 import cardStyles from '@/Card/card.module.scss';
 import Button from '@/components/Button';
-import Title from '@/components/Title';
 
 const Card = () => {
   return (
@@ -32,7 +31,7 @@ const Card = () => {
             </div>
 
             <div className={cardStyles.infoBox}>
-              <Title text={title} color='purple' />
+              <div className={cardStyles.cardTitle}>{title}</div>
               <div className={cardStyles.userListContainer}>
                 <div className={cardStyles.userProfileContainer}>
                   {userList.map(({ profileSrc, userId }) => {
@@ -93,6 +92,20 @@ const CARD_DATA = [
       },
     ],
     currentBid: '1.35 ETH',
+  },
+  {
+    time: '2h:24m:04s',
+    title: 'Illuminated Enigma',
+    isLiked: true,
+    contentSrc: card02,
+    userList: [
+      { userId: 'EtherFlow', profileSrc: user03 },
+      {
+        userId: 'NanoNebula',
+        profileSrc: user01,
+      },
+    ],
+    currentBid: '2.05 ETH',
   },
   {
     time: '2h:24m:04s',
