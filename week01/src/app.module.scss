@@ -1,4 +1,36 @@
+@use '@/styles/variables.scss' as var;
+
 .nftContainer {
   margin-top: 55px;
   padding: 0 27px;
+
+  @media (min-width: var.$tablet-breakpoint) {
+    margin-top: 64px;
+    padding: 0 140px;
+  }
+
+  .seeAllButton {
+    color: #6f4ff2;
+
+    @media (min-width: var.$tablet-breakpoint) {
+      display: none;
+    }
+  }
+
+  .arrowContainer {
+    display: none;
+
+    @media (min-width: var.$tablet-breakpoint) {
+      display: flex;
+      gap: 12px;
+    }
+
+    button {
+      width: 24px;
+      height: 28px;
+      border: none;
+
+      background-color: transparent;
+    }
+  }
 }
