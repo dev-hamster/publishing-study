@@ -1,18 +1,13 @@
 import { useEffect, useState } from 'react';
 
-import card01 from '@/assets/card01.jpeg';
-import card02 from '@/assets/card02.jpeg';
 import IcoClock from '@/assets/ico-clock.svg?react';
 import IcoBid from '@/assets/ico-currency-ethereum.svg?react';
 import IcoHeart from '@/assets/ico-heart.svg?react';
-import user01 from '@/assets/user01.jpeg';
-import user02 from '@/assets/user02.jpeg';
-import user03 from '@/assets/user03.jpeg';
 import cardStyles from '@/Card/card.module.scss';
 import Button from '@/components/Button';
 
-const Card = () => {
-  const [visibleCards, setVisibleCards] = useState<(typeof CARD_DATA)[0][]>([]);
+const Card = ({ data }: { data: unknown[] }) => {
+  const [visibleCards, setVisibleCards] = useState<(typeof data)[0][]>([]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -27,7 +22,7 @@ const Card = () => {
         count = 2;
       }
 
-      setVisibleCards(CARD_DATA.slice(0, count));
+      setVisibleCards(data.slice(0, count));
     };
 
     handleResize();
@@ -103,76 +98,3 @@ const Card = () => {
 };
 
 export default Card;
-
-const CARD_DATA = [
-  {
-    time: '2h:24m:04s',
-    title: 'Iron Man',
-    isLiked: false,
-    contentSrc: card01,
-    userList: [
-      { userId: 'CosmicArtisan', profileSrc: user01 },
-      {
-        userId: 'Sculptor',
-        profileSrc: user02,
-      },
-    ],
-    currentBid: '1.35 ETH',
-  },
-  {
-    time: '2h:24m:04s',
-    title: 'Illuminated Enigma',
-    isLiked: true,
-    contentSrc: card02,
-    userList: [
-      { userId: 'EtherFlow', profileSrc: user03 },
-      {
-        userId: 'NanoNebula',
-        profileSrc: user01,
-      },
-    ],
-    currentBid: '2.05 ETH',
-  },
-  {
-    time: '2h:24m:04s',
-    title: 'Illuminated Enigma',
-    isLiked: true,
-    contentSrc: card02,
-    userList: [
-      { userId: 'EtherFlow', profileSrc: user03 },
-      {
-        userId: 'NanoNebula',
-        profileSrc: user01,
-      },
-    ],
-    currentBid: '2.05 ETH',
-  },
-  {
-    time: '2h:24m:04s',
-    title: 'Illuminated Enigma',
-    isLiked: true,
-    contentSrc: card02,
-    userList: [
-      { userId: 'EtherFlow', profileSrc: user03 },
-      {
-        userId: 'NanoNebula',
-        profileSrc: user01,
-      },
-    ],
-    currentBid: '2.05 ETH',
-  },
-  {
-    time: '2h:24m:04s',
-    title: 'Illuminated Enigma',
-    isLiked: true,
-    contentSrc: card02,
-    userList: [
-      { userId: 'EtherFlow', profileSrc: user03 },
-      {
-        userId: 'NanoNebula',
-        profileSrc: user01,
-      },
-    ],
-    currentBid: '2.05 ETH',
-  },
-];

@@ -1,0 +1,46 @@
+.content {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.6px;
+  color: #0c0c0c;
+}
+
+.filterButtonBlock {
+  display: flex;
+  justify-content: flex-end;
+
+  width: 100%;
+  margin-top: 24px;
+
+  .filterButton {
+    width: 105px;
+  }
+
+  .filterButtonContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+  }
+}
+
+.contentContainer {
+  margin-top: 22.5px;
+
+  .loadMoreButtonBlock {
+    margin-top: 22.5px;
+
+    .loadMorebutton {
+      height: 44px;
+
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+  }
+}
