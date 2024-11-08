@@ -1,3 +1,5 @@
+@use '@/styles/variables.scss' as var;
+
 .titleContainer {
 }
 
@@ -5,6 +7,12 @@
   font-size: 21px;
   font-weight: 700;
   line-height: 33.6px;
+
+  @media (min-width: var.$tablet-breakpoint) {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 42px;
+  }
 }
 
 .purple {
