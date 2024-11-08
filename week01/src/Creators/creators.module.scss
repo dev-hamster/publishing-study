@@ -1,3 +1,5 @@
+@use '@/styles/variables.scss' as var;
+
 .creatorsContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -6,6 +8,11 @@
   row-gap: 24px;
 
   margin-top: 24px;
+
+  @media (min-width: var.$tablet-breakpoint) {
+    display: flex;
+    gap: 12px;
+  }
 }
 
 .card {
@@ -15,6 +22,7 @@
   justify-content: center;
   align-items: center;
 
+  width: 100%;
   padding: 12px;
   border-radius: 15px;
   border: 1px solid #d3d4d6;

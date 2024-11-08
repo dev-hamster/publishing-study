@@ -30,10 +30,10 @@ const Card = () => {
       setVisibleCards(CARD_DATA.slice(0, count));
     };
 
-    handleResize(); // 초기화 시 호출
-    window.addEventListener('resize', handleResize); // 리사이즈 이벤트 등록
+    handleResize();
+    window.addEventListener('resize', handleResize);
 
-    return () => window.removeEventListener('resize', handleResize); // 이벤트 정리
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   return (
