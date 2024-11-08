@@ -3,6 +3,7 @@ import IcoLeft from './assets/ico-left.svg?react';
 import IcoRight from './assets/ico-right.svg?react';
 import Card from './Card';
 import TitleWithButton from './components/TitleWithButton';
+import Creators from './Creators';
 import Header from './Header';
 import Hero from './Hero';
 
@@ -34,6 +35,20 @@ function App() {
           }
         ></TitleWithButton>
         <Card />
+      </section>
+
+      <section className={layout.creatorsContainer}>
+        <TitleWithButton
+          text='Meet Our Talented Creators'
+          size='small'
+          color='black'
+          Button={
+            <a href='#' className={layout.seeAllButton}>
+              See All
+            </a>
+          }
+        />
+        <Creators />
       </section>
     </>
   );

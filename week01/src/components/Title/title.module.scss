@@ -3,7 +3,7 @@
 .titleContainer {
 }
 
-.text {
+.medium {
   font-size: 21px;
   font-weight: 700;
   line-height: 33.6px;
@@ -13,6 +13,11 @@
     font-weight: 700;
     line-height: 42px;
   }
+}
+.small {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .purple {

@@ -34,3 +34,25 @@
     }
   }
 }
+
+.creatorsContainer {
+  margin-top: 55px;
+  padding: 0 27px;
+
+  @media (min-width: var.$tablet-breakpoint) {
+    margin-top: 64px;
+    padding: 0 140px;
+  }
+
+  .seeAllButton {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13.2px;
+    letter-spacing: -0.01em;
+    color: #6f4ff2;
+
+    @media (min-width: var.$tablet-breakpoint) {
+      display: none;
+    }
+  }
+}

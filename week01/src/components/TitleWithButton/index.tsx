@@ -4,15 +4,17 @@ import titleStyles from '@/components/TitleWithButton/titleWithButton.module.scs
 const TitleWithButton = ({
   text,
   color = 'black',
+  size = 'medium',
   Button,
 }: {
   text: string;
   color?: 'purple' | 'black';
+  size?: 'medium' | 'small';
   Button: React.ReactNode;
 }) => {
   return (
     <div className={titleStyles.titleContainer}>
-      <Title color={color} text={text} />
+      <Title color={color} text={text} size={size} />
 
       {Button}
     </div>
