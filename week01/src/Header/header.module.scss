@@ -1,5 +1,7 @@
 @use '@/styles/variables.scss' as var;
 
+$pc-breakpoint: 1423px; // pc 기준 padding + logo + search + menu
+
 .container {
   display: flex;
   align-items: center;
@@ -15,7 +17,7 @@
     height: 83px;
   }
 
-  @media (min-width: var.$pc-breakpoint) {
+  @media (min-width: $pc-breakpoint) {
     margin-top: 32px;
     padding: 10px 140px;
     max-width: 1640px;
@@ -74,7 +76,7 @@
 
       background: #f1f1f2;
 
-      @media (min-width: var.$pc-breakpoint) {
+      @media (min-width: $pc-breakpoint) {
         display: none;
       }
     }
@@ -82,7 +84,7 @@
     .menuList {
       display: none;
 
-      @media (min-width: var.$pc-breakpoint) {
+      @media (min-width: $pc-breakpoint) {
         display: flex;
         gap: 12px;
 
@@ -148,7 +150,7 @@
 .searchContainer {
   display: none;
 
-  @media (min-width: var.$pc-breakpoint) {
+  @media (min-width: $pc-breakpoint) {
     display: flex;
   }
   align-items: center;

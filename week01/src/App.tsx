@@ -20,7 +20,9 @@ function App() {
     <>
       <Header />
 
-      <Hero />
+      <section className={layout.nftContainer}>
+        <Hero />
+      </section>
 
       <section className={layout.nftContainer}>
         <TitleWithButton
