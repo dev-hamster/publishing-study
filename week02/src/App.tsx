@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import { useState } from 'react';
 
+import CollectionsCard from '@/components/CollectionsCard';
 import NFTsCard from '@/components/NFTsCards';
 import TabButton from '@/components/TabButton';
 
@@ -14,7 +15,8 @@ function App() {
       </TabContainer>
 
       <NFTsCardContainer>
-        <NFTsCard />
+        {tab === 'NFTs' && <NFTsCard />}
+        {tab === 'Collections' && <CollectionsCard />}
       </NFTsCardContainer>
     </>
   );
