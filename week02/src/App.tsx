@@ -2,6 +2,7 @@ import styled from '@emotion/styled';
 import { useState } from 'react';
 
 import CollectionsCard from '@/components/CollectionsCard';
+import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import MainContent from '@/components/MainContent';
 import NFTsCard from '@/components/NFTsCards';
@@ -23,6 +24,8 @@ function App() {
         {tab === 'NFTs' && <NFTsCard />}
         {tab === 'Collections' && <CollectionsCard />}
       </NFTsCardContainer>
+
+      <Footer />
     </>
   );
 }
@@ -50,8 +53,10 @@ const TabContainer = styled(Container)`
 
 const NFTsCardContainer = styled(Container)`
   padding-top: 40px;
+  padding-bottom: 40px;
   background: #3b3b3b;
   @media (min-width: ${tabletBreakpoint}) {
     padding-top: 60px;
+    padding-bottom: 60px;
   }
 `;
