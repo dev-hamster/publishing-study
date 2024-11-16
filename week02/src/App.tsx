@@ -2,6 +2,7 @@ import styled from '@emotion/styled';
 import { useState } from 'react';
 
 import CollectionsCard from '@/components/CollectionsCard';
+import Header from '@/components/Header';
 import NFTsCard from '@/components/NFTsCards';
 import TabButton from '@/components/TabButton';
 
@@ -10,6 +11,8 @@ function App() {
 
   return (
     <>
+      <Header />
+
       <TabContainer>
         <TabButton tab={tab} handleClick={(tab) => setTab(tab)} />
       </TabContainer>
