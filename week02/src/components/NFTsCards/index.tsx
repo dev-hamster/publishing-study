@@ -240,6 +240,10 @@ const PriceBox = styled.div`
   display: flex;
   flex-direction: column;
   gap: 8px;
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 13.2px;
 `;
 
 const HighestBidBox = styled(PriceBox)`
