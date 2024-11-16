@@ -3,6 +3,7 @@ import { useState } from 'react';
 
 import CollectionsCard from '@/components/CollectionsCard';
 import Header from '@/components/Header';
+import MainContent from '@/components/MainContent';
 import NFTsCard from '@/components/NFTsCards';
 import TabButton from '@/components/TabButton';
 
@@ -12,6 +13,7 @@ function App() {
   return (
     <>
       <Header />
+      <MainContent />
 
       <TabContainer>
         <TabButton tab={tab} handleClick={(tab) => setTab(tab)} />
