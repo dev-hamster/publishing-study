@@ -86,6 +86,7 @@ const CollectionsCard = () => {
               {card.total > 0 && (
                 <CollectionListItem>{card.total}+</CollectionListItem>
               )}
+              {card.total === 0 && <CollectionListEmptyItem />}
             </CollectionListBlock>
 
             <CardContents>
@@ -126,6 +127,15 @@ const CollectionListBlock = styled.div`
   gap: 15px;
   flex: 1 1 95px;
   margin-top: 15px;
+`;
+
+const CollectionListEmptyItem = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
 `;
 
 const CollectionListItem = styled.div`
