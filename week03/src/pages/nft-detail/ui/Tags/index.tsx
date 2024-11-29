@@ -1,4 +1,4 @@
-import { CaptionText, FlexColumnBox } from '@/components/shared';
+import { CaptionText, FlexColumnBox } from '@/shared/ui';
 import styled from '@emotion/styled';
 
 export const Tags = () => {

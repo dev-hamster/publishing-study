@@ -1,6 +1,6 @@
-import { FlexColumnBox, FlexRowBox } from '@/components/shared';
-import { SpaceMonoFont } from '@/components/shared/font';
 import styled from '@emotion/styled';
+
+import { FlexColumnBox, FlexRowBox, SpaceMonoFont } from '@/shared/ui';
 
 export const EndsIn = () => {
   return (

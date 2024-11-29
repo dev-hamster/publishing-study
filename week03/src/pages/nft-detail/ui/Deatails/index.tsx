@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
-import { CaptionText, FlexColumnBox } from '../shared';
-import { WorkSansFont } from '../shared/font';
+
+import { CaptionText, FlexColumnBox, WorkSansFont } from '@/shared/ui';
 
 export const Details = () => {
   return (

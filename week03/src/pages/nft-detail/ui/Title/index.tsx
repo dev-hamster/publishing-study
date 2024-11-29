@@ -1,5 +1,4 @@
-import { FlexColumnBox } from '@/components/shared';
-import { WorkSansFont } from '@/components/shared/font';
+import { FlexColumnBox, WorkSansFont } from '@/shared/ui';
 import styled from '@emotion/styled';
 
 export const Title = () => {

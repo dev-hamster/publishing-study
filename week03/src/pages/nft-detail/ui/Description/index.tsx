@@ -1,9 +1,6 @@
-import {
-  CaptionText,
-  DescriptionText,
-  FlexColumnBox,
-} from '@/components/shared';
 import styled from '@emotion/styled';
+
+import { CaptionText, DescriptionText, FlexColumnBox } from '@/shared/ui';
 
 export const Description = () => {
   return (

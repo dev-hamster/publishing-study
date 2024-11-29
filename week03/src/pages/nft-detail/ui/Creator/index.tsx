@@ -1,10 +1,11 @@
+import styled from '@emotion/styled';
+
 import {
   CaptionText,
   DescriptionText,
   FlexColumnBox,
   FlexRowBox,
-} from '@/components/shared';
-import styled from '@emotion/styled';
+} from '@/shared/ui';
 
 export const Creator = () => {
   return (

@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
 
-import IcoMenu from '@/assets/ico_burger_menu.svg?react';
-import IcoLogo from '@/assets/ico_logo.svg?react';
-import IcoUser from '@/assets/ico_user.svg?react';
+import IcoMenu from '@/shared/assets/ico_burger_menu.svg?react';
+import IcoLogo from '@/shared/assets/ico_logo.svg?react';
+import IcoUser from '@/shared/assets/ico_user.svg?react';
 
 const Header = () => {
   return (

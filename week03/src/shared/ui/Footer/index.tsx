@@ -1,11 +1,11 @@
 import styled from '@emotion/styled';
 
-import IcoDiscord from '@/assets/ico_discord_logo.svg?react';
-import IcoEnvelop from '@/assets/ico_envelope.svg?react';
-import IcoInstagram from '@/assets/ico_instagram_logo.svg?react';
-import IcoLogo from '@/assets/ico_logo.svg?react';
-import IcoTwiiter from '@/assets/ico_twitter_logo.svg?react';
-import IcoYoutube from '@/assets/ico_youtube_logo.svg?react';
+import IcoDiscord from '@/shared/assets/ico_discord_logo.svg?react';
+import IcoEnvelop from '@/shared/assets/ico_envelope.svg?react';
+import IcoInstagram from '@/shared/assets/ico_instagram_logo.svg?react';
+import IcoLogo from '@/shared/assets/ico_logo.svg?react';
+import IcoTwiiter from '@/shared/assets/ico_twitter_logo.svg?react';
+import IcoYoutube from '@/shared/assets/ico_youtube_logo.svg?react';
 
 function Footer() {
   return (

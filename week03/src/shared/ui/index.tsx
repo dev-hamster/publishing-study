@@ -1,7 +1,6 @@
-import { SpaceMonoFont, WorkSansFont } from '@/components/shared/font';
 import styled from '@emotion/styled';
-
-export { SpaceMonoFont, WorkSansFont } from './font';
+import { SpaceMonoFont } from '../styles';
+export { SpaceMonoFont, WorkSansFont } from '../styles';
 
 export const FlexRowBox = styled.div`
   width: 100%;
@@ -19,6 +18,6 @@ export const CaptionText = styled.p`
 `;
 
 export const DescriptionText = styled.p`
-  ${WorkSansFont.base};
+  ${SpaceMonoFont.base};
   color: #ffffff;
 `;
